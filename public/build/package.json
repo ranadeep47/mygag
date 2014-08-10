@@ -1,0 +1,23 @@
+{
+  "name": "mygag-client",
+  "version": "0.0.0",
+  "description": "client side npm for browserify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "gitub.com/ranadeep47/mygag"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "backbone": "~1.1.2",
+    "underscore": "~1.6.0"
+  },
+  "devDependencies": {
+    "jstify": "~0.3.0"
+  }
+}

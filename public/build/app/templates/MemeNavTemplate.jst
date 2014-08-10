@@ -1,0 +1,12 @@
+<div class="row">
+	<div class="col-xs-12">
+		<h3 class="meme-nav-header">Choose the kind of <b>FUN!</b></h3>
+		<select name="category" class="meme-category-select">
+			<% for(var i=0,len=categories.length; i < len; ++i){ %>
+				<option class="meme-category-option" value="<%= categories[i]%>">
+					<%= categories[i]%>
+				</option>
+			<%} %>
+		</select>
+	</div>
+</div>
