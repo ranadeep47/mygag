@@ -21,13 +21,13 @@ module.exports = {
 
 if(module.exports.environment === 'production') {
 
-	module.exports.host = '',
-	module.exports.port = 8080,
+	module.exports.host = process.env.OPENSHIFT_NODEJS_IP,
+	module.exports.port = process.env.OPENSHIFT_NODEJS_PORT,
 	module.exports.uri 	= ''
 
 	module.exports.mongodb = {
-		uri 	: 'mongodb://ranadeep:mongodb47@dbh70.mongolab.com:27707/openshift_6ranbtil_ev5ctvhm',
-		dbName  : 'openshift_6ranbtil_ev5ctvhm'
+		uri 	: 'mongodb://user:pass@host:port/dbame',
+		dbName  : 'dbname'
 	}
 
 }
