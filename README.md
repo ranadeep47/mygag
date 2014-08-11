@@ -8,6 +8,12 @@ I made it primarily to test memory leaks and learn memory profiling in chrome de
 
 Comparing snapshot2 (take after view changes) with snapshot1 shows the old views are deleted and new views are created without any leaks .
 
+Run `npm install` in both root folder and `mygag/public/build/` since it uses browserify to build. 
+
+Browserify build command `browserify $mypath/build/app/index.js -t jstify > $mypath/dist/js/build.js`
+
+Also for css generation it uses [myth](http://myth.io)
+
 The app uses imgur's free image api to obtain images according to the subreddit chosen 
 
 Feel free to fork it and make it more fun and also make all your config changes in the `config.js` file.
